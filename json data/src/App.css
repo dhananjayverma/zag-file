@@ -1,0 +1,283 @@
+.App {
+  max-width:500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.email-input-wrapper {
+  position: relative;
+}
+
+.email-icon {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.file-input {
+  position: relative;
+}
+
+.file-dropzone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-dropzone.active {
+  border-color: #007bff;
+}
+
+.file-upload-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.file-name {
+  margin-left: 8px;
+}
+
+.error {
+  color: red;
+  margin-top: 5px;
+}
+
+.file-contents-section {
+  margin-bottom: 150px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.file-contents-wrapper {
+  border: 1px hidden;
+  border-radius: 4px;
+  padding: 10px;
+  max-height: 200px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal p {
+  margin-bottom: 10px;
+}
+
+.modal-buttons {
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  margin-right: 10px;
+}
+
+.data-count {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.go-to-entities,
+.cancel {
+  margin-right: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.go-to-entities:hover {
+  background-color: #0056b3;
+}
+
+.data-count {
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* .success-icon {
+  width:50px;
+  height:50px;
+  fill: rgb(0, 13, 128); 
+} */
+
+
+.success-icon {
+  width:100px;
+  height:100px;
+  fill: green; /* Adjust the color as needed */
+  background-color: #fff; /* Add your desired background color */
+  border-radius: 50%; /* Optional: Add border-radius for a circular background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.success-message {
+  margin-bottom: 10px;
+}
+
+.total-entries {
+  margin-bottom: 10px;
+}
+
+.success-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.success-icon {
+  font-size: 50px;
+}
+
+.success-icon-path {
+  fill: green; 
+}
+
+.success-message,
+.total-entries {
+  font-weight: bold;
+}
+
+.file-upload-container {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload-text {
+  margin-left: 8px;
+}
+
+.cancel {
+  margin-top: 10px;
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.cancel-container {
+  justify-content: space-between;
+  align-items: center;
+  display: grid;
+}
+
+.submit-arrow {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+/* Mobile styles */
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .form-field {
+    margin-bottom: 8px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .file-dropzone {
+    height: 80px;
+  }
+
+  .file-upload-icon {
+    font-size: 20px;
+  }
+
+  .file-name {
+    font-size: 14px;
+  }
+
+  .modal {
+    max-width: 320px;
+    padding: 10px;
+  }
+
+  /* .success-icon {
+    font-size: 40px;
+  } */
+
+  .cancel {
+    padding: 8px 12px;
+  }
+}
