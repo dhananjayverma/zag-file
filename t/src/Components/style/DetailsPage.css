@@ -1,0 +1,137 @@
+/* .details-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.product-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-details {
+  margin-left: 20px;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin-bottom: 5px;
+}
+
+.size-options {
+  display: flex;
+  margin-top: 10px;
+}
+
+.size-options button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.size-options button.selected {
+  background-color: #333;
+  color: #fff;
+}
+
+.add-to-cart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+} */
+
+
+
+.details-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.product-details {
+  text-align: center;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  margin-bottom: 5px;
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.size-options button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.size-options button.selected {
+  background-color: #333;
+  color: #fff;
+}
+
+.add-to-cart-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .product-image img {
+    margin-bottom: 10px;
+  }
+  
+  .size-options {
+    margin-top: 10px;
+  }
+  
+  .size-options button {
+    margin: 3px;
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+  
+  .add-to-cart-button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
