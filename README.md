@@ -54,6 +54,9 @@ Dashboard Page: This page renders a layout based on the provided design. It uses
 ### screeenshots
 ![Screenshot (29)](https://github.com/dhananjayverma/zag-file/assets/108890988/b1d1a882-6301-42e5-a4f8-f452de69cd82)
 
+
+# [demo vedio](https://drive.google.com/file/d/1FlKuAx4y5Ad7sn6CW-0jZbbjHVGIGzVY/view?usp=drive_link)
+
 #### Contributing
 Contributions to this project are welcome. Feel free to fork the repository and submit a pull request with your improvements.
 
