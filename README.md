@@ -4,11 +4,9 @@
 # Project Name
 #### this is company assignment 
 # Description
-This project is a React Web App that includes three main sections: Mobile UI, Form Component, and Dashboard. Each section has its own set of requirements and design layouts. The goal of this project is to create a functional and visually appealing web application following the provided designs.
-
-Sections
-Mobile UI
-The Mobile UI section includes the following pages:
+This project is a React Web App that includes three main sections:
+Mobile UI, Form Component, and Dashboard.
+Each section has its own set of requirements and design layouts. The goal of this project is to create a functional and visually appealing web application following the provided designs.
 
 # Home/Discover: 
 This page displays a list of products. Clicking on a product opens the Details page.
@@ -34,7 +32,7 @@ This page renders a layout based on the provided design. It uses a JSON dataset 
 > json data </br>
 
 
-
+# [demo vedio](https://drive.google.com/file/d/1FlKuAx4y5Ad7sn6CW-0jZbbjHVGIGzVY/view?usp=drive_link)
 
 
 # Section - A: Mobile UI ---
@@ -57,7 +55,7 @@ This page renders a layout based on the provided design. It uses a JSON dataset 
 ![Screenshot (29)](https://github.com/dhananjayverma/zag-file/assets/108890988/b1d1a882-6301-42e5-a4f8-f452de69cd82)
 
 
-# [demo vedio](https://drive.google.com/file/d/1FlKuAx4y5Ad7sn6CW-0jZbbjHVGIGzVY/view?usp=drive_link)
+
 
 #### Contributing
 Contributions to this project are welcome. Feel free to fork the repository and submit a pull request with your improvements.
