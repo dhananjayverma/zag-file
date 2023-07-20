@@ -59,7 +59,7 @@ Contributions to this project are welcome. Feel free to fork the repository and 
 
 ### Section - A: Mobile UI --- deploy link:- https://musical-salmiakki-084a96.netlify.app/
 
-###  Section - B: Form Component ---  deploy link :- https://snazzy-stroopwafel-2bf258.netlify.app/
+###  Section - B: Form Component ---  deploy link :-https://shiny-torte-30d4f6.netlify.app/
 
 ### Section - C: Dashboard ---  deploy link :- https://bejewelled-wisp-086f78.netlify.app/
 
