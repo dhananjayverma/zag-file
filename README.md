@@ -36,20 +36,21 @@ Dashboard Page: This page renders a layout based on the provided design. It uses
 
 
 # Section - A: Mobile UI ---
-### deploy link:- https://musical-salmiakki-084a96.netlify.app/
+# [Deployment link](https://musical-salmiakki-084a96.netlify.app/)
 ### screeenshots
 ![Screenshot (27)](https://github.com/dhananjayverma/zag-file/assets/108890988/429d3232-e71b-4c30-9663-973943ba1f10)
 
 
 ###  Section - B: Form Component --- 
-### deploy link :-https://shiny-torte-30d4f6.netlify.app/
+
+# [Deployment link](https://shiny-torte-30d4f6.netlify.app/)
 ### screeenshots
 ![Screenshot (28)](https://github.com/dhananjayverma/zag-file/assets/108890988/94bf6c29-6926-4284-a7d0-69924a5c0132)
 
 
 ### Section - C: Dashboard ---  
-### deploy link :- https://statuesque-yeot-d573bb.netlify.app/
-<a name="https://statuesque-yeot-d573bb.netlify.app/">my</a>
+# [Deployment link](https://statuesque-yeot-d573bb.netlify.app/)
+
 ### screeenshots
 ![Screenshot (29)](https://github.com/dhananjayverma/zag-file/assets/108890988/b1d1a882-6301-42e5-a4f8-f452de69cd82)
 
