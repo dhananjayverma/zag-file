@@ -10,17 +10,19 @@ Sections
 Mobile UI
 The Mobile UI section includes the following pages:
 
-Home/Discover: This page displays a list of products. Clicking on a product opens the Details page.
+# Home/Discover: 
+This page displays a list of products. Clicking on a product opens the Details page.
 Details: This page displays detailed information about a product. It includes a size selection feature and an "Add to Cart" button that opens the My Cart page.
-Form Component
-The Form Component section includes the following functionality:
+<hr>
 
-Form Component Page: This page allows users to upload a JSON file. The file picker ensures that only valid JSON files can be selected. Relevant error messages are displayed for incorrect file types or invalid formats.
+# Form Component Page:
+This page allows users to upload a JSON file. The file picker ensures that only valid JSON files can be selected. Relevant error messages are displayed for incorrect file types or invalid formats.
 File Contents: This section displays the contents of the uploaded JSON file.
 Submit: When the form is submitted, a success message modal is displayed.
+<hr>
 
-
-Dashboard Page: This page renders a layout based on the provided design. It uses a JSON dataset to display data. Sort and search functionalities are implemented, along with pagination. Charts are displayed based on the dataset using a chart library of choice.
+# Dashboard Page: 
+This page renders a layout based on the provided design. It uses a JSON dataset to display data. Sort and search functionalities are implemented, along with pagination. Charts are displayed based on the dataset using a chart library of choice.
 
 ## Technologies Used
 
