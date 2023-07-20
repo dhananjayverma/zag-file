@@ -12,14 +12,15 @@ function Dashboard() {
   const [filter, setFilter] = useState("");
   const [totalPages, setTotalPages] = useState(1);
   const [pageNumbers, setPageNumbers] = useState([]);
+  const [sortingMethod, setSortingMethod] = useState("");
 
   const paginate = () => {
     const startIdx = (page - 1) * 8;
     const endIdx = startIdx + 8;
-    setUsersData(data.slice(startIdx, endIdx));
+    setUsersData(constData.slice(startIdx, endIdx));
 
     // Calculate total number of pages
-    const total = Math.ceil(data.length / 8);
+    const total = Math.ceil(constData.length / 8);
     setTotalPages(total);
 
     // Generate page numbers array
@@ -32,21 +33,41 @@ function Dashboard() {
   }, [page]);
 
   const handleChange = (value) => {
-    let sortedData = data;
+    let sortedData = constData.slice(); // Create a copy of the data array
+  
     if (value === "inactive") {
-      sortedData = constData.sort((a, b) => a.status - b.status);
+      sortedData = sortedData.filter((user) => !user.status);
     } else if (value === "active") {
-      sortedData = constData.sort((a, b) => b.status - a.status);
+      sortedData = sortedData.filter((user) => user.status);
     } else if (value === "newest") {
-      sortedData = constData.sort((a, b) => (a.created > b.created ? -1 : 1));
+      sortedData = sortedData.sort((a, b) => (a.created > b.created ? -1 : 1));
     }
+  
+    // Update the sortingMethod state with the current sorting value
+    setSortingMethod(value);
+  
     setFilter(value);
     setUsersData(sortedData);
   };
+  
 
+
+
+  
   const handleSearch = (e) => {
     const searchValue = e.target.value.toLowerCase();
-    const filteredData = constData.filter(
+    let filteredData = constData;
+
+    // Apply the original sorting method when filtering
+    if (sortingMethod === "newest") {
+      filteredData = filteredData.sort((a, b) => (a.created > b.created ? -1 : 1));
+    } else if (sortingMethod === "active") {
+      filteredData = filteredData.sort((a, b) => (a.status && !b.status ? -1 : 1));
+    } else if (sortingMethod === "inactive") {
+      filteredData = filteredData.sort((a, b) => (!a.status && b.status ? -1 : 1));
+    }
+
+    filteredData = filteredData.filter(
       (user) =>
         user.name.toLowerCase().includes(searchValue) ||
         user.company.toLowerCase().includes(searchValue) ||
@@ -54,8 +75,11 @@ function Dashboard() {
         user.email.toLowerCase().includes(searchValue) ||
         user.country.toLowerCase().includes(searchValue)
     );
+
     setUsersData(filteredData);
   };
+
+
 
   return (
     <div className="app">
@@ -166,8 +190,7 @@ function Dashboard() {
               </tbody>
             </table>
           </div>
-
-          <div className="pagination">
+ <div className="pagination">
             <p className="pagination-text">
               Showing items {page + (page - 1) * 8} to {page * 8} of {data.length} entries
             </p>
