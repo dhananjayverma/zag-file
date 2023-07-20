@@ -85,7 +85,7 @@ function App() {
   };
 
   const handleGoToEntities = () => {
-    window.location.href = "/my-entities";
+    window.location.href = "/";
   };
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
